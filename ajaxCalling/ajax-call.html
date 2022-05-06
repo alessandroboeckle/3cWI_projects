@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" src="style.css">
+    <script src="ajax-call.js"></script>
+    <title> My AJAX-Call with NodeJS </title>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1> Ajax is NodeJS calling ... </h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <span>Dein Name:</span>
+        </div>
+        <div class="col-sm-6">
+            <input type="text" name="name" id="name"/>
+        </div>
+        <div class="col-sm-3">
+            <button id="button_send_name">Senden</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <span>Dein Alter:</span>
+        </div>
+        <div class="col-sm-6">
+            <input type="text" name="age" id="age"/>
+        </div>
+        <div class="col-sm-3">
+            <button id="button_send_age">Senden</button>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-sm-9">
+            <div class="jumbotron text-center">
+                <h1><span name="result_name" id="result_name"></span></h1>
+                <h3><span name="result_age" id="result_age"></span></h3>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<html>
+
